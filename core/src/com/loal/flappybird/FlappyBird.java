@@ -1,9 +1,11 @@
 package com.loal.flappybird;
 
 import com.badlogic.gdx.ApplicationAdapter;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.ScreenUtils;
+import com.loal.flappybird.States.GameStateManager;
 
 public class FlappyBird extends ApplicationAdapter {
 
@@ -11,26 +13,27 @@ public class FlappyBird extends ApplicationAdapter {
 	public static final int HEIGHT = 720;
 	public static final String TITLE = "FlappyBird";
 
-	SpriteBatch batch;
-	Texture img;
+	//CREACION DE INSTACIA DE GameStateManager
+	private GameStateManager gsm;
+
+	private SpriteBatch batch;
 	
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		img = new Texture("badlogic.jpg");
+		gsm = new GameStateManager();
 	}
 
 	@Override
 	public void render () {
 		ScreenUtils.clear(1, 0, 0, 1);
-		batch.begin();
-		batch.draw(img, 0, 0);
-		batch.end();
+		gsm.update(Gdx.graphics.getDeltaTime());
+		gsm.render(batch);
 	}
 	
 	@Override
 	public void dispose () {
 		batch.dispose();
-		img.dispose();
+
 	}
 }
