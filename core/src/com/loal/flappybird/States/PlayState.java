@@ -3,14 +3,16 @@ package com.loal.flappybird.States;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.loal.flappybird.FlappyBird;
+import com.loal.flappybird.sprites.Bird;
 
 public class PlayState extends State{
-    private Texture bird;
+
+    private Bird bird;
 
     protected PlayState(GameStateManager gameStateManager) {
         super(gameStateManager);
-        bird = new Texture("bird.png");
 
+        bird = new Bird(50 ,320);
         camera.setToOrtho(false , FlappyBird.WIDTH / 2, FlappyBird.HEIGHT / 2);
     }
 
@@ -21,14 +23,15 @@ public class PlayState extends State{
 
     @Override
     public void update(float dt) {
-
+        handleInput();
+        bird.equals(dt);
     }
 
     @Override
     public void render(SpriteBatch spriteBatch) {
         spriteBatch.setProjectionMatrix(camera.combined);
         spriteBatch.begin();
-        spriteBatch.draw(bird ,50,50);
+        spriteBatch.draw(bird.getBird() ,bird.getPosition().x ,bird.getPosition().y);
         spriteBatch.end();
     }
 
