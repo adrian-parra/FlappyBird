@@ -6,7 +6,7 @@ import com.badlogic.gdx.math.Vector3;
 
 public abstract class State {
 
-    
+
     //MUESTRA SOLO UN PEDASO DEL VIDEOJUEGO...
     //MUESTRA SOLO LO QUE ESTE EN EL MOMENTO
     protected OrthographicCamera camera;
