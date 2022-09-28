@@ -11,7 +11,7 @@ public class DesktopLauncher {
 		config.setForegroundFPS(60);
 
 		config.setTitle(FlappyBird.TITLE);
-		config.setWindowSizeLimits(0 ,0,FlappyBird.WIDTH ,FlappyBird.HEIGHT);
+		config.setWindowSizeLimits(0,FlappyBird.HEIGHT,FlappyBird.WIDTH ,FlappyBird.HEIGHT);
 
 		new Lwjgl3Application(new FlappyBird(), config);
 	}
