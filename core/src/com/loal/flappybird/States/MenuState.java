@@ -4,8 +4,8 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 public class MenuState extends State{
 
-    
-    protected MenuState(GameStateManager gameStateManager) {
+
+    public MenuState(GameStateManager gameStateManager) {
         super(gameStateManager);
     }
 

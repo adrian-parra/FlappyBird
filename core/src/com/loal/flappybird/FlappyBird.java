@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.loal.flappybird.States.GameStateManager;
+import com.loal.flappybird.States.MenuState;
 
 public class FlappyBird extends ApplicationAdapter {
 
@@ -22,6 +23,7 @@ public class FlappyBird extends ApplicationAdapter {
 	public void create () {
 		batch = new SpriteBatch();
 		gsm = new GameStateManager();
+		gsm.push(new MenuState(gsm));
 	}
 
 	@Override
