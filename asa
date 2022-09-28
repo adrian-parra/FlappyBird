@@ -1,0 +1,38 @@
+[33mcommit f2aadac9c83c4055833328100e65056f2c226078[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: d819af6 cb8f626
+Author: adrian <adrian.adrianborquez@gmail.com>
+Date:   Tue Sep 27 21:42:41 2022 -0600
+
+    Merge branch 'main' of https://github.com/adrian-parra/FlappyBird
+
+[33mcommit d819af65d4944db6dd7eb1f157356cf6e69ab075[m
+Author: adrian <adrian.adrianborquez@gmail.com>
+Date:   Tue Sep 27 21:42:07 2022 -0600
+
+    creacion de la clase abstartacta 'State' en la cual se declararon todos los metodos y atributos que se ocupan en los estadios del juego.
+
+[33mcommit 4653355b45afb2ab2740b1f73628c5113f774248[m
+Merge: 09e331b c88c4c8
+Author: adrian <adrian.adrianborquez@gmail.com>
+Date:   Tue Sep 27 21:26:34 2022 -0600
+
+    Merge branch 'main' of https://github.com/adrian-parra/FlappyBird
+
+[33mcommit cb8f626f0cf7d188ef93183cc2a8ee99d0b03e46[m
+Merge: 09e331b c88c4c8
+Author: adrian <adrian.adrianborquez@gmail.com>
+Date:   Tue Sep 27 21:26:34 2022 -0600
+
+    Merge branch 'main' of https://github.com/adrian-parra/FlappyBird
+
+[33mcommit 09e331b7bd8e73ddba230750e2e545dfa71f6892[m
+Author: adrian <adrian.adrianborquez@gmail.com>
+Date:   Sat Aug 27 16:02:50 2022 -0600
+
+    Configuracion de archivos del proyecto completada.
+
+[33mcommit c88c4c8eab6345308fabbc1a8fa43f4102d00779[m
+Author: adrian <adrian.adrianborquez@gmail.com>
+Date:   Sat Aug 27 16:02:50 2022 -0600
+
+    Configuracion de archivos del proyecto completada.
